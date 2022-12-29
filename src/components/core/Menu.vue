@@ -26,19 +26,19 @@
         <span>หน้าแรก</span>
       </a-menu-item>
       <a-menu-item key="2" @click="$router.push('/directory')">
-        <LineChartOutlined />
+        <ReadOutlined />
         <span>บทเรียน</span>
       </a-menu-item>
       <a-menu-item key="3" @click="$router.push('/members')">
-        <LineChartOutlined />
+        <TeamOutlined />
         <span>จัดการสมาชิก</span>
       </a-menu-item>
       <a-menu-item key="4" @click="$router.push('/dataMain')">
-        <LineChartOutlined />
+        <FolderOutlined />
         <span>ข้อมูล</span>
       </a-menu-item>
       <a-menu-item key="5" @click="$router.push('/dataView')">
-        <LineChartOutlined />
+        <WalletOutlined />
         <span>ข้อมูลความคืบหน้า</span>
       </a-menu-item>
       <a-menu-item key="6" @click="$router.push('/dataPoint')">

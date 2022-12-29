@@ -13,10 +13,6 @@ export const imageUrl = import.meta.env.VITE_BACKEND_BASE_URL + "/images";
 export const server = {
   LOGIN_URL: `login`,
   REGISTER_URL: `register`,
-  PRODUCT_URL: `product`,
-  PRODUCTV2_URL: `productv2`,
-  TRANSACTION_URL: `transaction`,
-  REPORT_URL: `report`,
   TOKEN_KEY: `token`,
   USERNAME: `username`,
 };
