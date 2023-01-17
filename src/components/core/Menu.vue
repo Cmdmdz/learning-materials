@@ -60,8 +60,8 @@ export default {
   components: {
     ...Icons,
   },
-  setup(props, { emit }) {
-    const selectedKeys = ref<string[]>(["2"]);
+  setup(props: { collapsed: any; }, {emit}: any) {
+    const selectedKeys = ref<string[]>(["1"]);
     const router = useRouter();
 
     const toggleCollapsed = () => {

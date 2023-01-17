@@ -17,7 +17,7 @@ export const useAuthStore = defineStore("auth", () => {
       await new Promise((resolve) => setTimeout(resolve, 1000));
 
       let result = await api.login(user);
-      if (result == true) {
+      if (result) {
         session.username = user.username;
         session.isLoggedIn = true;
         fetchingStatus.value = FetchingStatus.success;

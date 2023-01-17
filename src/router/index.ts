@@ -7,6 +7,8 @@ import DataMain from "@/views/DataMain.vue";
 import Members from "@/views/Members.vue";
 import DataView from "@/views/DataView.vue";
 import Directory from "@/views/Directory.vue";
+import BoardGame from "@/views/BoardGame.vue";
+import SeqStudy from "@/views/SeqStudy.vue";
 
 import { useAuthStore } from "@/store/useAuthStore";
 const routes: Array<vueRouter.RouteRecordRaw> = [
@@ -54,6 +56,18 @@ const routes: Array<vueRouter.RouteRecordRaw> = [
     path: "/dataPoint",
     name: "dataPoint",
     component: DataPoint,
+    meta: { isSecured: true },
+  },
+  {
+    path: "/boardGame",
+    name: "boardGame",
+    component: BoardGame,
+    meta: { isSecured: true },
+  },
+  {
+    path: "/seqStudy",
+    name: "seqStudy",
+    component: SeqStudy,
     meta: { isSecured: true },
   },
   {
